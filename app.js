@@ -143,7 +143,21 @@ console.log(moveArr(arr));
 // console.log(getLevel2(input));
 
 //masala-2  n natural soni va A, B butun sonlari berilgan (n > 2). a[0] = A; a[1] = B; boshqa elementlari o'zidan oldingi barcha elementlari yig'indisiga teng bo'lgan massivni hosil qiling va elementlarini chiqaring
+/*
+let n = 3;
+let a = 2;
+let b = 3;
+let answer = [2, 3];
 
+for (let i = 0; i < n - 2; i++) {
+  let counter = 0;
+  for (let k = 0; k < answer.lenght; k++) {
+    counter += answer[k];
+  }
+  answer.push(counter);
+}
+console.log(answer);
+*/
 //masala-3  n ta elementdan tashkil topgan massiv berilgan. Uning elementlarini teskari tartibda chiqaruvchi programma tuzilsin.
 // let arr = [1, 2, 3, 4];
 // console.log(arr.reverse());
@@ -226,13 +240,19 @@ console.log(moveArr(arr));
 // console.log(sumCounter(inputArray, 3, 6));
 
 //masala-12  Massivga kiritilgan qiymatlardan truthy va falsy elementlaridan iborat alohida 2 ta massiv hosil qiling.
+/*
+const arr = [10, false, "", "Abdulaziz", null];
+const truthy = [];
+const falthy = [];
 
-// const input = [10, false, "", "Abdulaziz", null, true];
-// let thruty = input.filter((arr) => Boolean(arr) == true);
-// let falcy = input.filter((arr) => Boolean(arr) != true);
-// console.log(thruty);
-// console.log(falcy);
-
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i]) {
+    truthy.push(arr[i]);
+  } else {
+    falthy.push(arr[i]);
+  }
+}
+  */
 //masala-13  n ta elementdan tashkil topgan arr nomli massiv berilgan. Massiv juft indeksli elementlari orasidan kichigini aniqlovchi getOddMin(arr) nomli funksiya tuzilsin.
 
 // let inputArray = [1, 2, 3, 4, 5, 6, 7, 8];
